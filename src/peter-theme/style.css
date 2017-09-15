@@ -313,7 +313,7 @@ table th {
   font-weight: normal;
   text-shadow: none;
   -webkit-text-stroke-width: 0;
-  color: #444;
+  color: #7f7ddc;
   clear: both;
 }
 
@@ -557,11 +557,11 @@ pre .xml .cdata {
   bottom: 10px;
   right: 10px;
   font-size: 0.5em;
-  color: #666;
+  color: #7d7be1;
 }
 
 .credit a {
-  color: #444;
+  color: #8f8de8;
 }
 
 .corner-logos {
@@ -712,6 +712,7 @@ h2 + .quote {
 
 .slide.linkedin:before {
   background-image: url(images/linkedin-parchment.jpg);
+  filter: none;
 }
 
 .slide.samsunglogo img {
