@@ -32,7 +32,7 @@ controls: false
 
 -- samsunglogo
 
-![Samsung logo](images/samsung-logo-blue-question.svg)
+![Samsung logo](images/samsung-logo-white-question.svg)
 
 --
 
@@ -82,17 +82,17 @@ controls: false
 
 --
 
-## [~400 million active users](https://www.smashingmagazine.com/2016/10/whats-the-deal-with-the-samsung-internet-browser/).
+## [<sub>~</sub>400 million active users](https://www.smashingmagazine.com/2016/10/whats-the-deal-with-the-samsung-internet-browser/)
 
 ### &ldquo;The biggest browser you've probably never heard of&rdquo;
 
--- img-with-header pictureframe goodboy
+-- img-with-header pictureframe begood
 
-# Be good.
+## Be a good citizen
 
-![Good boy. Canine good citizen.](images/goodcitizen1.jpg)
+![Power Rangers](images/power-rangers-together.jpg)
 
-<div class="credit">[Jon Hurd](https://www.flickr.com/photos/jonhurd/45162940)</div>
+<div class="credit">[Liz Swezey](https://www.flickr.com/photos/lizswezey2/15314187570)</div>
 
 -- img-with-header pictureframe
 
@@ -166,7 +166,7 @@ controls: false
 
 > &ldquo;Yet another one to test!&rdquo;
 
-![Line divider](images/line-divider.svg)
+![Line divider](images/line-divider.png)
 
 > &ldquo;Just give up on the Samsung stock browser and preload Chrome&rdquo;
 
@@ -260,7 +260,7 @@ controls: false
 
 #### [samsunginter.net](https://samsunginter.net)
 
--- img-with-header picturefeame
+-- img-with-header pictureframe
 
 ![Smashing Mag article](images/smashing-mag.jpg)
 
