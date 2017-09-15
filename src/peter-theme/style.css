@@ -940,8 +940,8 @@ sub {
   max-height: calc(100vh - 12em);
 }
 
-.flags img {
-  max-height: calc(100vh - 11em);
+.img-with-header.flags img {
+  max-height: calc(100vh - 12em);
 }
 
 .v6_2.pictureframe img {
@@ -957,8 +957,7 @@ sub {
 }
 
 .make-the-web-better p {
-  font-family: 'PowerRanger', serif;
-  font-size: 10em;
+  font-size: 6em;
 }
 
 .to-be-continued img {

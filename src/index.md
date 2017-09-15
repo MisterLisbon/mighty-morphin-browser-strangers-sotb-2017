@@ -88,7 +88,7 @@ controls: false
 
 ![Power Rangers becoming Power Rangers](images/power-rangers-become.gif)
 
-<div class="caption">[giphy.com](https://giphy.com/gifs/power-rangers-ScQ1Uoo8xcznO)</div>
+<div class="credit">[giphy.com](https://giphy.com/gifs/power-rangers-ScQ1Uoo8xcznO)</div>
 
 -- img-with-header pictureframe
 
@@ -350,6 +350,14 @@ controls: false
 
 #### [bit.ly/samsung-internet-whats-the-deal](http://bit.ly/samsung-internet-whats-the-deal)
 
+--
+
+> &ldquo;Both HTC & Huawei have discontinued their own browsers... Possibly LG has too... As far as I know Xiaomi still has its own browser, as does newcomer Oppo... 
+
+> [But] Samsung is the only one to discuss its browser in public.&rdquo;
+
+<div class="caption">[Peter Paul-Koch](https://twitter.com/ppk)</div>
+
 -- think-you-know-top-browsers
 
 ## [&ldquo;Think you know the top web browsers?&rdquo;](https://medium.com/samsung-internet-dev/think-you-know-the-top-web-browsers-458a0a070175)
@@ -502,7 +510,7 @@ Generally:
 
 <div class="credit">[giphy.com](https://giphy.com/gifs/t6f2bNAjx7Bio)</div>
 
--- img-with-header flags
+-- img-with-header flags pictureframe
 
 ## `internet://flags`
 
@@ -510,7 +518,7 @@ Generally:
 
 ### Web Bluetooth, WebVR, WebGL 2 & more
 
--- img-with-header pictureframe
+-- img-with-header pictureframe stretch-img
 
 ![Web Drone](images/web-drone.gif)
 
@@ -563,13 +571,13 @@ Generally:
 
 -- make-the-web-better
 
-Make the Web Better
+&ldquo;Make the Web Better&rdquo;
 
 -- to-be-continued pictureframe
 
-## To Be Continued...
+# To Be Continued...
 
-![Pandas waving](images/power-rangers-boom.gif)
+![Power Rangers boom](images/power-rangers-boom.gif)
 
 <div class="contact">
   <p class="social">[@poshaughnessy](https://twitter.com/poshaughnessy) &middot; [@samsunginternet](https://twitter.com/samsunginternet)</p>
