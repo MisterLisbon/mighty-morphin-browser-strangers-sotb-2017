@@ -104,7 +104,7 @@ body {
 }
 
 .contact .social {
-  font-size: 1em;
+  font-size: 1.35em;
 }
 
 .contact h3 {
@@ -115,6 +115,11 @@ img {
   max-width: 100%;
   max-height: 100%;
   max-height: calc(100vh - 3em); /* Allow space for captions by default */
+}
+
+.stretch-img img {
+  height: 100%;
+  height: calc(100vh - 3em);
 }
 
 video {
@@ -235,7 +240,7 @@ ol {
 li {
   text-align: left;
   margin-bottom: 0.5em;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 li code {
@@ -269,6 +274,7 @@ p {
 a {
   text-decoration: none;
   color: #bab7f5;
+  font-weight: 600;
 }
 
 a:hover {
@@ -553,7 +559,7 @@ pre .xml .cdata {
     overflow: visible;
     display: flex;
     page-break-after: always;
-    background-color: #222;
+    background-color: #fff;
   }
 }
 
@@ -592,25 +598,37 @@ pre .xml .cdata {
 }
 
 .img-with-caption img {
-  max-height: calc(100vh - 4em);
+  max-height: calc(100vh - 5em);
 }
 
 .img-with-header img {
-  max-height: calc(100vh - 6em);
+  max-height: calc(100vh - 7em);
+}
+
+.pictureframe.stretch-img img {
+  height: calc(100vh - 7em);
 }
 
 .img-with-header.stretch-img img {
-  height: calc(100vh - 6em);
+  height: calc(100vh - 7em);
 }
 
 .img-with-header.pictureframe img {
-  max-height: calc(100vh - 8em);
+  max-height: calc(100vh - 9em);
   max-width: calc(95vw - 120px);
 }
 
 .img-with-caption.pictureframe img {
-  max-height: calc(100vh - 6em);
+  max-height: calc(100vh - 7em);
   max-width: calc(95vw - 120px);
+}
+
+.img-with-header.goodcitizen img {
+  max-height: 70vh;
+}
+
+.img-with-header-and-caption img {
+  max-height: calc(100vh - 11em);
 }
 
 .line-dividers img {
@@ -682,7 +700,40 @@ h2 + .quote {
   z-index: 1;
 }
 
+.three-images img {
+  max-width: 32%;
+}
+
+.four-images img {
+  max-width: 24%;
+}
+
+.five-images img {
+  max-width: 19%;
+}
+
+.six-images img {
+  max-width: 16%;
+}
+
+.two-profiles .slide-content {
+  display: flex;
+}
+
+.two-profiles .slide-content div {
+  flex-basis: 50%;
+}
+
+.pictureframe.two-profiles img {
+  width: 60%;
+}
+
 /* Slide specific styles here */
+
+sub {
+  position: relative;
+  top: 0.25em;
+}
 
 #slide-1:before {
   background-image: url(images/terminator.jpg);
@@ -719,7 +770,7 @@ h2 + .quote {
 }
 
 .slide.linkedin:before {
-  background-image: url(images/linkedin-parchment.jpg);
+  background-image: url(images/linkedin-lightning.jpg);
   filter: none;
 }
 
@@ -748,27 +799,23 @@ h2 + .quote {
   padding: 1em;
 }
 
+.history.half .container div {
+  width: 50%;
+}
+
 .history .container img {
   width: 60%;
   margin-bottom: 1em;
-}
-
-.history .container p {
-  font-size: 0.9em;
 }
 
 .slide.goodcitizen:before {
   background-image: url(images/goodcitizen.jpg);
 }
 
-.profile img {
-  width: 400px;
-}
-
 .pictureframe img {
-  border-image: url(images/picture-frame-smaller-modified.png) 40 repeat;
-  border-width: 40px;
-  border-style: inset; 
+  border-image: url(images/power-ranger-purple-tiny-border-20.png) 20 repeat;
+  border-width: 20px;
+  border-style: inset;
 }
 
 .goodcitizen h1 {
@@ -797,6 +844,121 @@ h2 + .quote {
 
 .flame img {
   height: 60vh;
+}
+
+.rise-of-chromia img {
+  margin: 1em 0;
+}
+
+.think-you-know-top-browsers img {
+  margin: 1em 0 1em 0;
+  max-height: 25vh;
+}
+
+.think-you-know-top-browsers p {
+  margin: 0.5em 0 0 0;
+}
+
+.think-you-know-top-browsers .caption {
+  margin: 0 0 1em 0;
+}
+
+.browser-diversity img {
+  max-height: calc(100vh - 10em);
+}
+
+.think-you-know-top-browsers h4 {
+  padding-top: 1em;
+}
+
+.bidirectional h1 {
+  font-size: 5em;
+  margin-bottom: 0;
+}
+
+.bidirectional h2 {
+  margin-top: 0em;
+}
+
+.cssgrid .container {
+  display: grid;
+  grid-template: repeat(2, [row] 1fr) / repeat(4, [col] 1fr);
+  grid-gap: 20px;
+  width: 80%;
+  margin: 0 auto 1.5em auto;
+}
+
+.cssgrid .container div {
+  font-size: 3em;
+  border: 2px solid #333;
+}
+
+.cssgrid .container div:nth-child(1) {
+  grid-column: col 1;
+  grid-row: row 1;
+}
+
+.cssgrid .container div:nth-child(2) {
+  grid-column: col 2;
+  grid-row: row 1;
+}
+
+.cssgrid .container div:nth-child(3) {
+  grid-column: col 3;
+  grid-row: row 1;
+}
+
+.cssgrid .container div:nth-child(4) {
+  grid-column: col 1;
+  grid-row: row 2;
+}
+
+.cssgrid .container div:nth-child(5) {
+  grid-column: col 2;
+  grid-row: row 2;
+}
+
+.cssgrid .container div:nth-child(6) {
+  grid-column: col 3;
+  grid-row: row 2;
+}
+
+.cssgrid .container div:nth-child(7) {
+  grid-column: col 4;
+  grid-row: row 2;
+}
+
+.why h1 {
+  font-size: 5em;
+}
+
+.pictureframe.ambient-badging img {
+  max-height: calc(100vh - 12em);
+}
+
+.flags img {
+  max-height: calc(100vh - 11em);
+}
+
+.v6_2.pictureframe img {
+  max-height: calc(100vh - 12em);
+}
+
+.release-schedule p {
+  margin: 1em 0 0 0;
+}
+
+.fromto h3 {
+  margin-bottom: 0.5em;
+}
+
+.to-be-continued img {
+  margin-top: 1em;
+  height: 25vh;
+}
+
+.to-be-continued h3 {
+  margin-bottom: 0;
 }
 
   </style>
@@ -849,7 +1011,7 @@ h2 + .quote {
 </section>
   </div>
   <div class="slide hidden  samsunglogo" id="slide-6">
-    <section class="slide-content"><p><img src="images/samsung-logo-blue-question.svg" alt="Samsung logo"></p>
+    <section class="slide-content"><p><img src="images/samsung-logo-white-question.svg" alt="Samsung logo"></p>
 </section>
   </div>
   <div class="slide hidden" id="slide-7">
@@ -893,14 +1055,14 @@ h2 + .quote {
 <!-- #### Laszlo Gombos ([@laszlogombos](https://twitter.com/laszlogombos)) --></section>
   </div>
   <div class="slide hidden" id="slide-10">
-    <section class="slide-content"><h2 id="-400-million-active-users-https-www-smashingmagazine-com-2016-10-whats-the-deal-with-the-samsung-internet-browser-"><a href="https://www.smashingmagazine.com/2016/10/whats-the-deal-with-the-samsung-internet-browser/">~400 million active users</a>.</h2>
+    <section class="slide-content"><h2 id="-sub-sub-400-million-active-users-https-www-smashingmagazine-com-2016-10-whats-the-deal-with-the-samsung-internet-browser-"><a href="https://www.smashingmagazine.com/2016/10/whats-the-deal-with-the-samsung-internet-browser/"><sub>~</sub>400 million active users</a></h2>
 <h3 id="-ldquo-the-biggest-browser-you-ve-probably-never-heard-of-rdquo-">&ldquo;The biggest browser you&#39;ve probably never heard of&rdquo;</h3>
 </section>
   </div>
-  <div class="slide hidden  img-with-header pictureframe goodboy" id="slide-11">
-    <section class="slide-content"><h1 id="be-good-">Be good.</h1>
-<p><img src="images/goodcitizen1.jpg" alt="Good boy. Canine good citizen."></p>
-<div class="credit"><a href="https://www.flickr.com/photos/jonhurd/45162940">Jon Hurd</a></div></section>
+  <div class="slide hidden  img-with-header pictureframe begood" id="slide-11">
+    <section class="slide-content"><h2 id="be-a-good-citizen">Be a good citizen</h2>
+<p><img src="images/power-rangers-together.jpg" alt="Power Rangers"></p>
+<div class="credit"><a href="https://www.flickr.com/photos/lizswezey2/15314187570">Liz Swezey</a></div></section>
   </div>
   <div class="slide hidden  img-with-header pictureframe" id="slide-12">
     <section class="slide-content"><p><img src="images/pwa-dev-summit-dan-jungkee.jpg" alt="PWA Dev Summit"></p>
@@ -964,7 +1126,7 @@ h2 + .quote {
     <section class="slide-content"><blockquote>
 <p>&ldquo;Yet another one to test!&rdquo;</p>
 </blockquote>
-<p><img src="images/line-divider.svg" alt="Line divider"></p>
+<p><img src="images/line-divider.png" alt="Line divider"></p>
 <blockquote>
 <p>&ldquo;Just give up on the Samsung stock browser and preload Chrome&rdquo;</p>
 </blockquote>
@@ -1037,7 +1199,7 @@ h2 + .quote {
 <h4 id="-samsunginter-net-https-samsunginter-net-"><a href="https://samsunginter.net">samsunginter.net</a></h4>
 </section>
   </div>
-  <div class="slide hidden  img-with-header picturefeame" id="slide-39">
+  <div class="slide hidden  img-with-header pictureframe" id="slide-39">
     <section class="slide-content"><p><img src="images/smashing-mag.jpg" alt="Smashing Mag article"></p>
 <h4 id="-bit-ly-samsung-internet-whats-the-deal-https-bit-ly-samsung-internet-whats-the-deal-"><a href="https://bit.ly/samsung-internet-whats-the-deal">bit.ly/samsung-internet-whats-the-deal</a></h4>
 </section>
