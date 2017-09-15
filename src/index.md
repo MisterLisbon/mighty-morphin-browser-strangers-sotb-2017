@@ -334,9 +334,9 @@ controls: false
 
 # Users First
 
--- img-with-header
+-- img-with-header pictureframe
 
-![Panda driving](images/panda-driving.jpg)
+![Power Rangers driving](images/power-rangers-driving.jpg)
 
 ##### A driving seat in web tech
 
@@ -494,11 +494,11 @@ Generally:
 
   > &ldquo;Awesome browser.&rdquo;
 
-  ![Line divider](images/line-divider.svg)
+  ![Line divider](images/line-divider.png)
 
   > &ldquo;FAST with content blockers enabled.&rdquo;
 
-  ![Line divider](images/line-divider.svg)
+  ![Line divider](images/line-divider.png)
 
   > &ldquo;Seriously the best browser. It's really fast and smooth.&rdquo;
 
@@ -593,7 +593,7 @@ Generally:
 
 ![Pandas waving](images/pandas-waving.gif)
 
-### Please give feedback at: [bit.ly/peter-coldfront](https://bit.ly/peter-coldfront)
+### Please give feedback at: [bit.ly/TODO](https://bit.ly/TODO)
 #### (Whether it made you a happy panda or not!)
 
 <div class="contact">
