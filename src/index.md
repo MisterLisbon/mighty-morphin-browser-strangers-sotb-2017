@@ -88,11 +88,11 @@ controls: false
 
 -- img-with-header pictureframe begood
 
-## Be a good citizen
+## Become a force for good
 
-![Power Rangers](images/power-rangers-together.jpg)
+![Power Rangers becoming Power Rangers](images/power-rangers-become.gif)
 
-<div class="credit">[Liz Swezey](https://www.flickr.com/photos/lizswezey2/15314187570)</div>
+<div class="caption">[giphy.com](https://giphy.com/gifs/power-rangers-ScQ1Uoo8xcznO)</div>
 
 -- img-with-header pictureframe
 
@@ -100,17 +100,17 @@ controls: false
 
 ##### Daniel & Jungkee Song ([@jungkees](https://twitter.com/jungkees)), PWA Dev Summit, June 2016
 
--- img-with-header pictureframe
+-- img-with-caption pictureframe
 
 ![PWA Dev Summit tweet](images/pwa-dev-summit.jpg)
 
 -- img-with-header pictureframe
 
-![Lego A-Team](images/lego-a-team.jpg)
+![Power Rangers](images/power-rangers-together.jpg)
 
 #### Forming a team (Web Advocacy)
 
-<div class="credit">[ThomasW](https://ideas.lego.com/profile/ThomasW)</div>
+<div class="credit">[Liz Swezey](https://www.flickr.com/photos/lizswezey2/15314187570)</div>
 
 -- img-with-header two-profiles pictureframe
 
@@ -138,9 +138,11 @@ controls: false
 
 -- simpsons pictureframe
 
-![Mountain to climb](images/simpsons-mountain-to-climb.gif)
+![Power Rangers getting attacked](images/power-rangers-attacked.gif)
 
 ##### The task ahead
+
+<div class="credit">[giphy.com](https://giphy.com/gifs/power-rangers-morphin-OOZLyBA9Euq2I)</div>
 
 -- survey
 
@@ -190,23 +192,17 @@ controls: false
 
 <div class="caption">Wikipedia says no!</div>
 
--- flame
+-- flame pictureframe
 
-![Flame emoji](images/flame-emoji.svg)
+![We've got a mission on our hands](images/power-ranger-explosions.gif)
 
-<div class="credit">[wikimedia](https://commons.wikimedia.org/wiki/File:Emoji_u1f525.svg)</div>
-
--- img-with-header stretch-img pictureframe
-
-![Sad panda](images/sadpanda.gif)
-
-<div class="credit">[giphy.com](https://giphy.com/gifs/sad-panda-prH3cY9Bsbinu)</div>
+<div class="credit">[giphy.com](https://giphy.com/gifs/power-rangers-morphin-OOZLyBA9Euq2I)</div>
 
 -- img-with-header stretch-img pictureframe
 
-![Panda rolling](images/panda-roll.gif)
+![Power Rangers in pain](images/power-ranger-pain.gif)
 
-<div class="credit">[giphy.com](https://giphy.com/gifs/panda-roll-Wji7dIi2rW7fy)</div>
+<div class="credit">[giphy.com](https://giphy.com/gifs/head-pain-YpmVBNubONoqs)</div>
 
 -- img-with-header pictureframe
 
@@ -292,9 +288,9 @@ controls: false
 
 -- img-with-header stretch-img pictureframe
 
-![Panda rolling](images/panda-happy.gif)
+![Power Rangers success](images/power-rangers-success.gif)
 
-<div class="credit">[giphy.com](https://giphy.com/gifs/happy-eating-VHiFO63HWiqha)</div>
+<div class="credit">[giphy.com](https://giphy.com/gifs/reaction-power-rangers-5yjYSCkSpLU3e)</div>
 
 -- why
 
@@ -330,10 +326,6 @@ controls: false
 
 #### Content Blockers
 
---
-
-# Users First
-
 -- img-with-header pictureframe
 
 ![Power Rangers driving](images/power-rangers-driving.jpg)
@@ -344,7 +336,7 @@ controls: false
 
 -- img-with-caption
 
-![W3C](images/w3c.png)
+![W3C](images/w3c-white.png)
 
 ### Service Workers &middot; WebVR &middot; Web Bluetooth &middot; Web Payments
 
@@ -374,9 +366,7 @@ controls: false
 
 <div class="caption">Mobile, worldwide ([StatCounter](http://gs.statcounter.com/browser-market-share/mobile/worldwide))</div>
 
-#### [bit.ly/think-you-know-the-top-browsers](https://bit.ly/think-you-know-the-top-browsers) (blog post)
-
-<div class="credit">Desktop. Global world.</div>
+#### [bit.ly/think-you-know-the-top-browsers](https://bit.ly/think-you-know-the-top-browsers)
 
 -- browser-diversity
 
@@ -444,13 +434,7 @@ controls: false
 
 -- img-with-caption
 
-![WebVR Panda logo](images/panda-dino-battle.png)
-
--- img-with-header stretch-img pictureframe
-
-![Panda chasing lion](images/panda-chasing-lion.gif)
-
-<div class="caption">[Samsung Internet versus Brave](https://twitter.com/poshaughnessy/status/902559842560303105)</div>
+![Mighty Morphin PWA Rangers](images/mmpr.svg)
 
 -- img-with-header v6_2 pictureframe
 
@@ -510,17 +494,17 @@ Generally:
 
 #### [bit.ly/engadget-inexplicable](https://www.engadget.com/2017/08/10/samsung-internet-opens-up-its-android-browser/)
 
--- img-with-header google-analytics
+-- img-with-header google-analytics pictureframe
 
-![Google Analytics](images/googleanalytics.png)
+![Google Analytics Emojipedia tweet](images/googleanalytics-emojipedia.jpg)
 
-#### Samsung Internet support coming soon (they promised!)
+#### [Google Analytics now supports Samsung Internet!](https://twitter.com/poshaughnessy/status/906135794871660544)
 
 -- pictureframe stretch-img
 
-![Panda dancing](images/panda-dancing.gif)
+![Power Rangers dancing](images/power-rangers-dancing.gif)
 
-<div class="credit">[giphy.com](https://giphy.com/gifs/thedudeperfectshow-cmt-the-dude-perfect-show-l3V0lsGtTMSB5YNgc)</div>
+<div class="credit">[giphy.com](https://giphy.com/gifs/t6f2bNAjx7Bio)</div>
 
 -- img-with-header flags
 
@@ -536,7 +520,7 @@ Generally:
 
 #### [github.com/poshaughnessy/web-bluetooth-parrot-drone](https://github.com/poshaughnessy/web-bluetooth-parrot-drone)
 
--- img-with-header fromto
+-- img-with-header fromto pictureframe
 
 ### From...
 
@@ -544,7 +528,7 @@ Generally:
 
 <div class="credit">[placeit](https://placeit.net/)</div>
 
--- img-with-header-and-caption fromto
+-- img-with-header-and-caption fromto pictureframe
 
 ### To... The Physical World, Mixed Reality & the Metaverse
 
@@ -554,9 +538,9 @@ Generally:
 
 <div class="credit">[Robert Couse-Baker](https://www.flickr.com/photos/29233640@N07/23787450049)</div>
 
---
+-- stretch-img
 
-![Samsung Internet full logo](images/samsunginternet-full-logo-dark.png)
+![Samsung Internet full logo](images/samsunginternet-full-logo-light.svg)
 
 -- img-with-header two-profiles pictureframe
 
@@ -575,26 +559,21 @@ Generally:
 
 #### [bit.ly/pwa-beginners-guide](https://bit.ly/pwa-beginners-guide)
 
---
+-- pictureframe stretch-img img-with-header
 
-## Continue...
+![Power Ranger running](images/power-rangers-running.gif)
 
-* **P**romoting diversity in tech
-* **W**riting docs, demos, tools
-* **A**dvocating the Web
+### We'll keep going!
 
---
+-- make-the-web-better
 
-![Make the Web better](images/make-the-web-better.png)
+Make the Web Better
 
 -- to-be-continued pictureframe
 
 ## To Be Continued...
 
-![Pandas waving](images/pandas-waving.gif)
-
-### Please give feedback at: [bit.ly/TODO](https://bit.ly/TODO)
-#### (Whether it made you a happy panda or not!)
+![Pandas waving](images/power-rangers-boom.gif)
 
 <div class="contact">
   <p class="social">[@poshaughnessy](https://twitter.com/poshaughnessy) &middot; [@samsunginternet](https://twitter.com/samsunginternet)</p>

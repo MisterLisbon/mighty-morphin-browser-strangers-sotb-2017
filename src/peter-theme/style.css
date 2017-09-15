@@ -30,6 +30,14 @@
   src: url('/fonts/terminator/Terminator.ttf')  format('truetype');
 }
 
+@font-face {
+  font-family: 'PowerRanger';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/power-rangers/PowerRangers.ttf')  format('truetype');
+}
+
+
 /* Theme Styles */
 body {
   font-family: 'ComicBook', sans-serif;
@@ -814,6 +822,10 @@ sub {
   margin-top: 1em;
 }
 
+.begood img {
+  height: calc(80vh - 5em);
+}
+
 .simpsons img {
   height: 70vh;
 }
@@ -856,7 +868,7 @@ sub {
 }
 
 .browser-diversity img {
-  max-height: calc(100vh - 10em);
+  max-height: calc(100vh - 12em);
 }
 
 .think-you-know-top-browsers h4 {
@@ -882,7 +894,7 @@ sub {
 
 .cssgrid .container div {
   font-size: 3em;
-  border: 2px solid #333;
+  border: 2px solid #9390f5;
 }
 
 .cssgrid .container div:nth-child(1) {
@@ -944,9 +956,14 @@ sub {
   margin-bottom: 0.5em;
 }
 
+.make-the-web-better p {
+  font-family: 'PowerRanger', serif;
+  font-size: 10em;
+}
+
 .to-be-continued img {
   margin-top: 1em;
-  height: 25vh;
+  max-height: 40vh;
 }
 
 .to-be-continued h3 {
