@@ -9,7 +9,7 @@ controls: false
 ### AND THE RISE OF THE CHROMIA
 
 <div class="contact">
-  <p class="social">[@poshaughnessy](https://twitter.com/poshaughnessy) from [@samsunginternet](https://twitter.com/samsunginternet)</p>
+  <p class="social">by [@poshaughnessy](https://twitter.com/poshaughnessy)</p>
 </div>
 
 --
@@ -17,7 +17,7 @@ controls: false
 ![Mighty Morphin Browser Strangers](images/mmbs.svg)
 
 <div class="contact">
-  <p class="social">[@poshaughnessy](https://twitter.com/poshaughnessy) from [@samsunginternet](https://twitter.com/samsunginternet)</p>
+  <p class="social">By [@poshaughnessy](https://twitter.com/poshaughnessy)</p>
 </div>
 
 --

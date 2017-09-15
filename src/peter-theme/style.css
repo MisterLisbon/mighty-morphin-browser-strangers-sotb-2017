@@ -702,11 +702,12 @@ h2 + .quote {
 }
 
 #slide-2 img {
-  max-height: 70vh;
+  max-height: 80vh;
 }
 
-#slide-2 h2:first-letter {
-  font-size: 1.5em;
+#slide-2 .contact {
+  position: relative;
+  top: -2em;
 }
 
 .slide.linkedin:before {
