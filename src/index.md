@@ -22,7 +22,7 @@ controls: false
 
 --
 
-## Once upon a time... (in April 2016)
+## My adventure began in April 2016...
 
 -- linkedin
 
@@ -46,11 +46,7 @@ controls: false
     <div>
       <h3>v1</h3>
       ![v1](images/sbrowser1.png)
-      <p>
-        <strong>2012:</strong> Based on AOSP. <strong>2013:</strong> Migrated to Chromium, launched with S4.
-        <em>Chromium M18 / M28 (v1.5)</em>
-      </p>        
-    </div>
+      <p><strong>2012:</strong> Based on AOSP. <strong>2013:</strong> Migrated to Chromium, launched with S4. <em>Chromium M18 / M28 (v1.5)</em></p></div>
     <div>
       <h3>v2</h3>
       ![v2](images/sbrowser2.png)
