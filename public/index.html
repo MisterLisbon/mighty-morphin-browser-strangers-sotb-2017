@@ -1,0 +1,1271 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#987fff">
+  <title>Mighty Morphin&#39; Browser Strangers</title>
+  <style type="text/css">
+    /*
+ * Originally based on github.com/sjaakvandenberg/cleaver-dark
+ */
+
+@font-face {
+  font-family: 'ComicBook';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/comic-book/Comic Book.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'ComicBook';
+  font-style: italic;
+  font-weight: 400;
+  src: url('/fonts/comic-book/Comic Book Italic.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'ComicBook';
+  font-style: normal;
+  font-weight: bold;
+  src: url('/fonts/comic-book/Comic Book Bold.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Terminator';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/terminator/Terminator.ttf')  format('truetype');
+}
+
+/* Theme Styles */
+body {
+  font-family: 'ComicBook', sans-serif;
+  font-size: 80%;
+  text-align: center;
+  overflow: hidden;
+  color: #9390f5;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Presentation Styles */
+.slide {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-content {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  padding: 1.5em;
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-size: 120%;
+  line-height: 1.375;
+  overflow: hidden;
+}
+
+.valign-top {
+  align-items: flex-start;
+}
+
+.valign-bottom {
+  align-items: flex-end;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.contact {
+  margin-top: 1.5em;
+}
+
+.contact p {
+  margin-bottom: 0.5em;
+  font-size: 1.2em;
+}
+
+.contact .social {
+  font-size: 1em;
+}
+
+.contact h3 {
+  margin-bottom: 0.5em;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  max-height: calc(100vh - 3em); /* Allow space for captions by default */
+}
+
+video {
+  max-width: 90vw;
+  max-height: 85vh;
+}
+
+video + .caption {
+  font-size: 0.6em;
+}
+
+.controls {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 10;
+}
+
+.arrow {
+  float: left;
+  height: 0;
+  width: 0;
+  margin-right: 15px;
+  border: 15px solid #ccc;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.prev {
+  border-top-color: transparent;
+  border-right-width: 25px;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-left-width: 0;
+}
+
+.prev:hover {
+  border-top-color: transparent;
+  border-right-width: 25px;
+  border-bottom-color: transparent;
+  border-left-width: 0;
+  border-left-color: #ccc;
+}
+
+.next {
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-right-width: 0;
+  border-bottom-color: transparent;
+  border-left-width: 25px;
+}
+
+.next:hover {
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-right-width: 0;
+  border-left-width: 25px;
+  border-left-color: #ccc;
+}
+
+h1, h2 {
+  margin: 0 0 0.25em 0;
+  font-weight: bold;
+  transform: scaleX(1.05);
+}
+
+h1 {
+  font-size: 300%;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 200%;
+  line-height: 1.4;
+}
+
+h2:last-child {
+  margin-bottom: 0;
+}
+
+h3 {
+  margin: 0 0 1em 0;
+  font-size: 150%;
+  line-height: 1.4;
+  border-bottom: none;
+  font-weight: bold;
+  -webkit-text-stroke: 1px #000;
+}
+
+h4 {
+  margin: 0.5em 0 1em 0;
+  font-size: 120%;
+  line-height: 1.3;
+  border-bottom: none;
+  font-weight: normal;
+}
+
+h5 {
+  margin: 0.2em 0 1em 0;
+  font-size: 110%;
+  font-weight: normal;
+}
+
+ul,
+ol {
+  margin: 0.5 0 1em 0;
+  padding: 0 0 0 45px;
+  line-height: 1.4;
+  font-size: 1.15em;
+  display: inline-block;
+}
+
+li {
+  text-align: left;
+  margin-bottom: 0.5em;
+  font-size: 1em;
+}
+
+li code {
+  font-size: 0.9em;
+}
+
+.long-list li {
+  font-size: 0.9em;
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 1.75em;
+  margin: 0;
+}
+
+.left {
+  float: left;
+  width: 48%;
+}
+
+.right {
+  float: right;
+  width: 48%;
+}
+
+p {
+  margin: 0 0 1em 0;
+}
+
+a {
+  text-decoration: none;
+  color: #bab7f5;
+}
+
+a:hover {
+  color: #c2c0f5;
+}
+
+pre {
+  font-size: 75%;
+  line-height: 1.3;
+  text-align: left;
+  padding: 1em 2em;
+  margin-bottom: 1em;
+  background: #fafafa;
+}
+
+table td,
+table th {
+  padding: 0 2em;
+}
+
+.progress {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 3px;
+}
+
+.progress-bar {
+  height: 3px;
+  width: 0;
+  background-color: #987fff;
+  -webkit-transition: width .15s ease-out;
+  -moz-transition: width .15s ease-out;
+  -o-transition: width .15s ease-out;
+  transition: width .15s ease-out;
+}
+
+.hidden {
+  display: none;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.caption {
+  font-size: 0.85em;
+  margin-top: 0.5em;
+  font-weight: normal;
+  text-shadow: none;
+  -webkit-text-stroke-width: 0;
+  color: #444;
+  clear: both;
+}
+
+.credits {
+  margin-top: 5em;
+  font-size: 0.5em;
+  font-weight: normal;
+  text-shadow: none;
+  -webkit-text-stroke-width: 0;
+}
+
+/* Quote by... */
+blockquote + p {
+  font-size: 0.9em;
+  margin-top: 1em;
+}
+
+/* Code Highlighting */
+code {
+  font-family: Courier, sans-serif;
+  border-radius: 3px;
+  font-weight: 500;
+  text-shadow: none;
+  -webkit-text-stroke-width: 0;
+}
+
+pre {
+  display: inline-block;
+  border-radius: 1em;
+}
+
+pre code {
+  display: block;
+  color: #444;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  overflow-y: hidden;
+  background: transparent;
+}
+
+pre .tag,
+pre .tag .title,
+pre .keyword,
+pre .literal,
+pre .change,
+pre .winutils,
+pre .flow,
+pre .lisp .title,
+pre .clojure .built_in,
+pre .nginx .title,
+pre .tex .special {
+  color: #704dff;
+}
+
+pre code .constant {
+  color: #66d9ef;
+}
+
+pre .class .title {
+  color: #fafafa;
+}
+
+pre .attribute,
+pre .symbol,
+pre .symbol .string,
+pre .value,
+pre .regexp {
+  color: #bf79db;
+}
+
+pre .tag .value,
+pre .string,
+pre .subst,
+pre .title,
+pre .haskell .type,
+pre .preprocessor,
+pre .ruby .class .parent,
+pre .built_in,
+pre .sql .aggregate,
+pre .django .template_tag,
+pre .django .variable,
+pre .smalltalk .class,
+pre .javadoc,
+pre .django .filter .argument,
+pre .smalltalk .localvars,
+pre .smalltalk .array,
+pre .attr_selector,
+pre .pseudo,
+pre .addition,
+pre .stream,
+pre .envvar,
+pre .apache .tag,
+pre .apache .cbracket,
+pre .tex .command,
+pre .prompt {
+  color: #987fff;
+}
+
+pre .comment,
+pre .java .annotation,
+pre .python .decorator,
+pre .template_comment,
+pre .pi,
+pre .doctype,
+pre .deletion,
+pre .shebang,
+pre .apache .sqbracket,
+pre .tex .formula {
+  color: #aaa;
+}
+
+pre .keyword,
+pre .literal,
+pre .css .id,
+pre .phpdoc,
+pre .title,
+pre .haskell .type,
+pre .vbscript .built_in,
+pre .sql .aggregate,
+pre .rsl .built_in,
+pre .smalltalk .class,
+pre .diff .header,
+pre .chunk,
+pre .winutils,
+pre .bash .variable,
+pre .apache .tag,
+pre .tex .special,
+pre .request,
+pre .status {
+  /* font-weight: 600; */
+}
+
+pre .coffeescript .javascript,
+pre .javascript .xml,
+pre .tex .formula,
+pre .xml .javascript,
+pre .xml .vbscript,
+pre .xml .css,
+pre .xml .cdata {
+  opacity: .5;
+}
+
+.hljs-keyword {
+  color: #704dff;
+}
+
+.hljs-string {
+  color: #987fff;
+}
+
+.hljs-title {
+  color: #673280;
+}
+
+.hljs-comment {
+  color: #777;
+}
+
+/* Media Queries */
+/* 640 x 480 is the default (80%) */
+
+/* 800 x 600 */
+@media (min-width: 800px) and (min-height: 600px) {
+    body {
+        font-size: 125%;
+    }
+}
+
+/* 1024 x 768 */
+@media (min-width: 1024px) and (min-height: 768px) {
+    body {
+        font-size: 160%;
+    }
+}
+
+/* 1152 x 864 */
+@media (min-width: 1152px) and (min-height: 864px) {
+    body {
+        font-size: 180%;
+    }
+}
+
+/* 1280 x 960 */
+@media (min-width: 1280px) and (min-height: 960px) {
+    body {
+        font-size: 200%;
+    }
+}
+
+/* 1440 x 1080 */
+@media (min-width: 1440px) and (min-height: 1080px) {
+    body {
+        font-size: 225%;
+    }
+}
+
+/* 1600 x 1200 */
+@media (min-width: 1600px) and (min-height: 1200px) {
+    body {
+        font-size: 250%;
+    }
+}
+
+/* 1920 x 1440 */
+@media (min-width: 1920px) and (min-height: 1440px) {
+    body {
+        font-size: 300%;
+    }
+}
+
+/* Override theme */
+@media (max-width: 850px) {
+  img {
+    width: auto;
+  }
+}
+
+/* Print styles used for saving to PDF */
+@media print {
+  * {
+    -webkit-print-color-adjust: exact;
+  }
+  .slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    display: flex;
+    page-break-after: always;
+    background-color: #222;
+  }
+}
+
+/* Common slide contents */
+
+.credit {
+  font-family: Helvetica, Arial, sans-serif;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 0.5em;
+  color: #666;
+}
+
+.credit a {
+  color: #444;
+}
+
+.corner-logos {
+  position: absolute;
+  bottom: 0.5em;
+  right: 0.5em;
+}
+
+.corner-logos img {
+  max-width: 3em;
+}
+
+.iframe .slide-content {
+  height: 100%;
+  padding: 0;
+}
+
+.img-with-caption p {
+  margin: 0;
+}
+
+.img-with-caption img {
+  max-height: calc(100vh - 4em);
+}
+
+.img-with-header img {
+  max-height: calc(100vh - 6em);
+}
+
+.img-with-header.stretch-img img {
+  height: calc(100vh - 6em);
+}
+
+.img-with-header.pictureframe img {
+  max-height: calc(100vh - 8em);
+  max-width: calc(95vw - 120px);
+}
+
+.img-with-caption.pictureframe img {
+  max-height: calc(100vh - 6em);
+  max-width: calc(95vw - 120px);
+}
+
+.line-dividers img {
+  height: 1em;
+}
+
+.slide .pun {
+  color: #c4c3f5;
+  font-size: 1em;
+  font-style: italic;
+}
+
+.strikethrough {
+  position: relative;
+  padding: 0 5px;
+}
+.strikethrough:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 55%;
+  right: 0;
+  border-top: 5px solid rgba(230, 50, 25, 0.8);
+
+  -webkit-transform:rotate(-8deg);
+  -moz-transform:rotate(-8deg);
+  -ms-transform:rotate(-8deg);
+  -o-transform:rotate(-8deg);
+  transform:rotate(-8deg);
+}
+
+h2 + .quote {
+  margin-top: 2em;
+}
+
+.align-top .slide-content {
+  padding: 0;
+  height: 100%;
+}
+
+.align-top .slide-content img {
+  position: relative;
+  top: 0;
+}
+
+/* For background images so we can apply filters */
+.slide {
+  overflow: auto;
+  position: relative;
+}
+/* Background image */
+.slide:before {
+  content: "";
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  display: block;
+  background-color: #111;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(images/lightning-pink.jpg);
+  box-shadow: inset 0 0 5em 1em rgba(10, 10, 10, 0.3); /* Vignette */
+  filter: blur(6px) brightness(0.6);
+  width: 100%;
+  height: 100%;
+}
+.slide-content {
+  z-index: 1;
+}
+
+/* Slide specific styles here */
+
+#slide-1:before {
+  background-image: url(images/terminator.jpg);
+  box-shadow: inset 0 0 5em 1em rgba(10, 10, 10, 0.8); /* Vignette */
+}
+
+#slide-1 {
+  color: #e73434;
+  font-family: 'Terminator', sans-serif;
+  text-shadow: 2px 2px 2px #000;
+}
+
+#slide-1 h1,
+#slide-1 h2 {
+  -webkit-text-stroke: 1px #000;
+}
+
+#slide-1 a,
+#slide-1 a:hover {
+  color: #e75656;
+}
+
+#slide-1 .contact {
+  font-weight: bold;
+}
+
+#slide-2 img {
+  max-height: 70vh;
+}
+
+#slide-2 h2:first-letter {
+  font-size: 1.5em;
+}
+
+.slide.linkedin:before {
+  background-image: url(images/linkedin-parchment.jpg);
+}
+
+.slide.samsunglogo img {
+  width: 70%;
+}
+
+.history h3 {
+  margin-bottom: 0.5em;
+}
+
+.history .container {
+  margin: 0.5em 0 0 0;
+}
+
+.history .container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.history .container div {
+  width: 25%;
+  box-sizing: border-box;
+  float: left;
+  padding: 1em;
+}
+
+.history .container img {
+  width: 60%;
+  margin-bottom: 1em;
+}
+
+.history .container p {
+  font-size: 0.9em;
+}
+
+.slide.goodcitizen:before {
+  background-image: url(images/goodcitizen.jpg);
+}
+
+.profile img {
+  width: 400px;
+}
+
+.pictureframe img {
+  border-image: url(images/picture-frame-smaller-modified.png) 40 repeat;
+  border-width: 40px;
+  border-style: inset; 
+}
+
+.goodcitizen h1 {
+  margin-top: 1em;
+}
+
+.simpsons img {
+  height: 70vh;
+}
+
+.survey .legend {
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  vertical-align: sub;
+}
+
+.survey .legend.red {
+  background-color: #f05b4f;
+}
+
+.survey .legend.yellow {
+  background-color: #f4c63d;
+  margin-left: 1.2em;
+}
+
+.flame img {
+  height: 60vh;
+}
+
+  </style>
+  <link rel="icon" href="images/favicon.png" type=”image/png">
+  <link rel="manifest" href="manifest.json">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@poshaughnessy">
+  <meta name="twitter:title" content="Mighty Morphin&#39; Browser Strangers">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:creator" content="@poshaughnessy">
+  <meta name="twitter:image" content="">
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Mighty Morphin&#39; Browser Strangers" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:description" content="" />
+</head>
+<body>
+    <div class="progress">
+    <div class="progress-bar"></div>
+  </div>
+
+  <div class="slide" id="slide-1">
+    <section class="slide-content"><h1 id="samsung-internet">SAMSUNG INTERNET</h1>
+<h3 id="and-the-rise-of-the-chromia">AND THE RISE OF THE CHROMIA</h3>
+<div class="contact">
+  <p class="social"><a href="https://twitter.com/poshaughnessy">@poshaughnessy</a> from <a href="https://twitter.com/samsunginternet">@samsunginternet</a></p>
+</div></section>
+  </div>
+  <div class="slide hidden" id="slide-2">
+    <section class="slide-content"><p><img src="images/mmbs.svg" alt="Mighty Morphin Browser Strangers"></p>
+<div class="contact">
+  <p class="social"><a href="https://twitter.com/poshaughnessy">@poshaughnessy</a> from <a href="https://twitter.com/samsunginternet">@samsunginternet</a></p>
+</div></section>
+  </div>
+  <div class="slide hidden" id="slide-3">
+    <section class="slide-content"><h2 id="once-upon-a-time-in-april-2016-">Once upon a time... (in April 2016)</h2>
+</section>
+  </div>
+  <div class="slide hidden  linkedin" id="slide-4">
+    <section class="slide-content"></section>
+  </div>
+  <div class="slide hidden" id="slide-5">
+    <section class="slide-content"><blockquote>
+<p>&quot;A <strong>major handset manufacturer</strong> - based near London - are looking for web developer / advocate to support developers building web applications on top of <strong>their browser</strong>...”</p>
+</blockquote>
+</section>
+  </div>
+  <div class="slide hidden  samsunglogo" id="slide-6">
+    <section class="slide-content"><p><img src="images/samsung-logo-blue-question.svg" alt="Samsung logo"></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-7">
+    <section class="slide-content"><p><img src="images/sbrowser4.png" alt="Samsung Internet"></p>
+<h2 id="-samsung-internet-">&quot;Samsung Internet&quot;?</h2>
+</section>
+  </div>
+  <div class="slide hidden  history" id="slide-8">
+    <section class="slide-content"><div class="container">
+    <div>
+      <h3>v1</h3>
+      <img src="images/sbrowser1.png" alt="v1">
+      <p><strong>2012:</strong> Originally based on AOSP. <strong>2013:</strong> Migrated to Chromium, launched with S4.</p>
+    </div>
+    <div>
+      <h3>v2</h3>
+      <img src="images/sbrowser2.png" alt="v2">
+      <p><strong>2014:</strong> Launched with S5.</p>
+    </div>
+    <div>
+      <h3>v3</h3>
+      <img src="images/sbrowser3.png" alt="v3">
+      <p><strong>2015:</strong> Launched with S6. First version on the Play Store.</p>
+    </div>
+    <div>
+      <h3>v4</h3>
+      <img src="images/sbrowser4.png" alt="v4">
+      <p><strong>2016:</strong> Launched with S7. PWA support.</p>
+    </div>
+</div>
+
+<div class="caption">2012-2016. See also: <a href="https://gist.github.com/poshaughnessy/5718717a04db20a02e9fdb3fc16e2258">Samsung Internet browser version rough guide</a></div></section>
+  </div>
+  <div class="slide hidden  img-with-header profile pictureframe" id="slide-9">
+    <section class="slide-content"><p><img src="images/danielappelquist.jpg" alt="Daniel Appelquist"></p>
+<h4 id="daniel-appelquist-torgo-https-twitter-com-torgo-">Daniel Appelquist (<a href="https://twitter.com/torgo">@torgo</a>)</h4>
+</section>
+  </div>
+  <div class="slide hidden  img-with-header profile pictureframe" id="slide-10">
+    <section class="slide-content"><p><img src="images/laszlogombos.jpg" alt="Laszlo Gombos"></p>
+<h4 id="laszlo-gombos-laszlogombos-https-twitter-com-laszlogombos-">Laszlo Gombos (<a href="https://twitter.com/laszlogombos">@laszlogombos</a>)</h4>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-11">
+    <section class="slide-content"><h2 id="-400-million-active-users-https-www-smashingmagazine-com-2016-10-whats-the-deal-with-the-samsung-internet-browser-"><a href="https://www.smashingmagazine.com/2016/10/whats-the-deal-with-the-samsung-internet-browser/">~400 million active users</a>.</h2>
+<h3 id="-ldquo-the-biggest-browser-you-ve-probably-never-heard-of-rdquo-">&ldquo;The biggest browser you&#39;ve probably never heard of&rdquo;</h3>
+</section>
+  </div>
+  <div class="slide hidden  img-with-header pictureframe" id="slide-12">
+    <section class="slide-content"><h1 id="be-good-">Be good.</h1>
+<p><img src="images/goodcitizen1.jpg" alt="Good boy. Canine good citizen."></p>
+<div class="credit"><a href="https://www.flickr.com/photos/jonhurd/45162940">Jon Hurd</a></div></section>
+  </div>
+  <div class="slide hidden  img-with-header pictureframe" id="slide-13">
+    <section class="slide-content"><p><img src="images/pwa-dev-summit-dan-jungkee.jpg" alt="PWA Dev Summit"></p>
+<h5 id="daniel-jungkee-song-jungkees-https-twitter-com-jungkees-pwa-dev-summit-june-2016">Daniel &amp; Jungkee Song (<a href="https://twitter.com/jungkees">@jungkees</a>), PWA Dev Summit, June 2016</h5>
+</section>
+  </div>
+  <div class="slide hidden  img-with-header pictureframe" id="slide-14">
+    <section class="slide-content"><p><img src="images/lego-a-team.jpg" alt="Lego A-Team"></p>
+<h4 id="forming-a-team">Forming a team</h4>
+<div class="credit"><a href="https://ideas.lego.com/profile/ThomasW">ThomasW</a></div></section>
+  </div>
+  <div class="slide hidden  img-with-header profile pictureframe" id="slide-15">
+    <section class="slide-content"><p><img src="images/adaedwards.jpg" alt="Ada Rose Edwards"></p>
+<h4 id="ada-rose-edwards-lady_ada_king-https-twitter-com-lady_ada_king-">Ada Rose Edwards (<a href="https://twitter.com/lady_ada_king">@lady_ada_king</a>)</h4>
+</section>
+  </div>
+  <div class="slide hidden  img-with-header profile pictureframe" id="slide-16">
+    <section class="slide-content"><p><img src="images/diegogonzalez.jpg" alt="Diego González-Zúñiga"></p>
+<h4 id="diego-gonz-lez-z-iga-diekus-https-twitter-com-diekus-">Diego González-Zúñiga (<a href="https://twitter.com/diekus">@diekus</a>)</h4>
+</section>
+  </div>
+  <div class="slide hidden  img-with-header pictureframe" id="slide-17">
+    <section class="slide-content"><p><img src="images/staines-with-alig.jpg" alt="Staines"></p>
+<h5 id="staines-uk">Staines, UK</h5>
+</section>
+  </div>
+  <div class="slide hidden  simpsons pictureframe" id="slide-18">
+    <section class="slide-content"><p><img src="images/simpsons-mountain-to-climb.gif" alt="Mountain to climb"></p>
+<h5 id="the-task-ahead">The task ahead</h5>
+</section>
+  </div>
+  <div class="slide hidden  survey" id="slide-19">
+    <section class="slide-content"><p><img src="images/awareness-survey-shadow.png" alt="Awareness survey - 63% aware of Samsung Internet"></p>
+<h4><span class="legend red"></span> Not Aware of Samsung Internet <span class="legend yellow"></span> Aware of Samsung Internet</h4>
+
+<div class="caption">Source: <a href="https://twitter.com/poshaughnessy/status/846813031178874880">Twitter poll, March 2017</a> - 761 votes</div></section>
+  </div>
+  <div class="slide hidden  img-with-header pictureframe" id="slide-20">
+    <section class="slide-content"><p><img src="images/googleanalytics-tweet.png" alt="HTML5Test tweet about Samsung Internet not showing up in Google Analytics"></p>
+</section>
+  </div>
+  <div class="slide hidden  img-with-header pictureframe" id="slide-21">
+    <section class="slide-content"><p><img src="images/caniuse-tweet.png" alt="Tweet about Samsung Internet not showing up in caniuse.com"></p>
+</section>
+  </div>
+  <div class="slide hidden  line-dividers" id="slide-22">
+    <section class="slide-content"><blockquote>
+<p>&ldquo;Yet another one to test!&rdquo;</p>
+</blockquote>
+<p><img src="images/line-divider.svg" alt="Line divider"></p>
+<blockquote>
+<p>&ldquo;Just give up on the Samsung stock browser and preload Chrome&rdquo;</p>
+</blockquote>
+<div class="caption">Developer reactions</div></section>
+  </div>
+  <div class="slide hidden" id="slide-23">
+    <section class="slide-content"><blockquote>
+<p>&ldquo;I’m not going to buy a Samsung phone just to test on your browser!&rdquo;</p>
+</blockquote>
+<div class="caption">Our (only) solution for non-Samsung users at the time was the <a href="http://developer.samsung.com/rtlLanding.do">Remote Test Lab</a></div></section>
+  </div>
+  <div class="slide hidden  img-with-header pictureframe" id="slide-24">
+    <section class="slide-content"><p><img src="images/stackoverflow-tag-highlighted.png" alt="Stack Overflow tag request which got shot down"></p>
+<div class="caption">StackOverflow says no!</div></section>
+  </div>
+  <div class="slide hidden  img-with-header pictureframe" id="slide-25">
+    <section class="slide-content"><p><img src="images/wikipedia-rejection.png" alt="Wikipedia article draft which got shot down"></p>
+<div class="caption">Wikipedia says no!</div></section>
+  </div>
+  <div class="slide hidden  flame" id="slide-26">
+    <section class="slide-content"><p><img src="images/flame-emoji.svg" alt="Flame emoji"></p>
+<div class="credit"><a href="https://commons.wikimedia.org/wiki/File:Emoji_u1f525.svg">wikimedia</a></div></section>
+  </div>
+  <div class="slide hidden  img-with-header stretch-img pictureframe" id="slide-27">
+    <section class="slide-content"><p><img src="images/sadpanda.gif" alt="Sad panda"></p>
+<div class="credit"><a href="https://giphy.com/gifs/sad-panda-prH3cY9Bsbinu">giphy.com</a></div></section>
+  </div>
+  <div class="slide hidden  img-with-header stretch-img pictureframe" id="slide-28">
+    <section class="slide-content"><p><img src="images/panda-roll.gif" alt="Panda rolling"></p>
+<div class="credit"><a href="https://giphy.com/gifs/panda-roll-Wji7dIi2rW7fy">giphy.com</a></div></section>
+  </div>
+  <div class="slide hidden  img-with-header pictureframe" id="slide-29">
+    <section class="slide-content"><p><img src="images/statcounter-europe.png" alt="StatCounter - mobile browsing in Europe"></p>
+<h5 id="over-10-share-of-all-mobile-browsing-in-europe-statcounter-http-gs-statcounter-com-browser-market-share-mobile-europe-monthly-201607-201707-bar-">Over 10% share of all mobile browsing in Europe (<a href="http://gs.statcounter.com/browser-market-share/mobile/europe/#monthly-201607-201707-bar">StatCounter</a>)</h5>
+</section>
+  </div>
+  <div class="slide hidden  img-with-header pictureframe" id="slide-30">
+    <section class="slide-content"><p><img src="images/caniuse-added.png" alt="caniuse added Samsung Internet"></p>
+<div class="caption">v4 was added to <a href="http://caniuse.com/">caniuse</a> in July 2016 and v5 in May 2017</div></section>
+  </div>
+  <div class="slide hidden  img-with-header pictureframe" id="slide-31">
+    <section class="slide-content"><p><img src="images/html5test.png" alt="HTML5Test adding Samsung Internet"></p>
+</section>
+  </div>
+  <div class="slide hidden  img-with-header pictureframe" id="slide-32">
+    <section class="slide-content"><p><img src="images/wikipedia-published.png" alt="Wikipedia article published"></p>
+</section>
+  </div>
+  <div class="slide hidden  img-with-header pictureframe" id="slide-33">
+    <section class="slide-content"><p><img src="images/stackoverflow-tag2.png" alt="Stack Overflow tag"></p>
+<div class="caption"><a href="https://stackoverflow.com/questions/tagged/samsung-browser">Stack Overflow tag</a> (we also monitor mentions without the tag!)</div></section>
+  </div>
+  <div class="slide hidden  img-with-caption pictureframe" id="slide-34">
+    <section class="slide-content"><p><img src="images/speaking-map-crop.png" alt="Samsung Internet speaking engagements map of the world"></p>
+<div class="caption">Places we&#39;ve spoken so far</div></section>
+  </div>
+  <div class="slide hidden  img-with-caption pictureframe" id="slide-35">
+    <section class="slide-content"><p><img src="images/snapwat-better-quality.gif" alt="Snapwat demo"></p>
+<p><a href="https://snapw.at"><a href="https://snapw.at">https://snapw.at</a></a></p>
+</section>
+  </div>
+  <div class="slide hidden  img-with-caption pictureframe" id="slide-36">
+    <section class="slide-content"><p><img src="images/metaverse.gif" alt="Metaverse demo"></p>
+<p><a href="https://metaverse.samsunginter.net">metaverse.samsunginter.net</a></p>
+</section>
+  </div>
+  <div class="slide hidden  img-with-header stretch-img pictureframe" id="slide-37">
+    <section class="slide-content"><p><img src="images/panda-happy.gif" alt="Panda rolling"></p>
+<div class="credit"><a href="https://giphy.com/gifs/happy-eating-VHiFO63HWiqha">giphy.com</a></div></section>
+  </div>
+  <div class="slide hidden" id="slide-38">
+    <section class="slide-content"><h1 id="why-">Why?</h1>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-39">
+    <section class="slide-content"><blockquote>
+<p>&ldquo;We&#39;ve added support for... Samsung Internet as a browser. this should be in production [soon].&rdquo;</p>
+</blockquote>
+<p>Google Analytics</p>
+</section>
+  </div>
+  <div class="slide hidden  img-with-header pictureframe" id="slide-40">
+    <section class="slide-content"><p><img src="images/panda-dancing.gif" alt="Panda dancing"></p>
+<div class="credit"><a href="https://giphy.com/gifs/thedudeperfectshow-cmt-the-dude-perfect-show-l3V0lsGtTMSB5YNgc">giphy.com</a></div></section>
+  </div>
+  <div class="slide hidden" id="slide-41">
+    <section class="slide-content"><h2 id="to-be-continued-">To Be Continued.</h2>
+<h3 id="please-give-your-review-at-todo-todolink-">Please give your review at <a href="TODOLINK">TODO</a></h3>
+<div class="contact">
+  <p class="social"><a href="https://twitter.com/poshaughnessy">@poshaughnessy</a></p>
+  <p class="social"><a href="https://twitter.com/samsunginternet">@samsunginternet</a></p>
+</div></section>
+  </div>
+
+
+
+  <script src="lib/faye-browser-min.js"></script>
+  <script type="text/javascript">
+    /**
+ * Returns the current page number of the presentation.
+ */
+function currentPosition() {
+  return parseInt(document.querySelector('.slide:not(.hidden)').id.slice(6));
+}
+
+
+/**
+ * Navigates forward n pages
+ * If n is negative, we will navigate in reverse
+ */
+function navigate(n) {
+  var position = currentPosition();
+  var numSlides = document.getElementsByClassName('slide').length;
+
+  /* Positions are 1-indexed, so we need to add and subtract 1 */
+  var nextPosition = (position - 1 + n) % numSlides + 1;
+
+  /* Normalize nextPosition in-case of a negative modulo result */
+  nextPosition = (nextPosition - 1 + numSlides) % numSlides + 1;
+
+  document.getElementById('slide-' + position).classList.add('hidden');
+  document.getElementById('slide-' + nextPosition).classList.remove('hidden');
+
+  updateProgress();
+  updateURL();
+  updateTabIndex();
+}
+
+
+/**
+ * Updates the current URL to include a hashtag of the current page number.
+ */
+function updateURL() {
+  window.history.replaceState({} , null, '#' + currentPosition());
+}
+
+
+/**
+ * Sets the progress indicator.
+ */
+function updateProgress() {
+  var progressBar = document.querySelector('.progress-bar');
+
+  if (progressBar !== null) {
+    var numSlides = document.getElementsByClassName('slide').length;
+    var position = currentPosition() - 1;
+    var percent = (numSlides === 1) ? 100 : 100 * position / (numSlides - 1);
+    progressBar.style.width = percent.toString() + '%';
+  }
+}
+
+
+/**
+ * Removes tabindex property from all links on the current slide, sets
+ * tabindex = -1 for all links on other slides. Prevents slides from appearing
+ * out of control.
+ */
+function updateTabIndex() {
+  var allLinks = document.querySelectorAll('.slide a');
+  var position = currentPosition();
+  var currentPageLinks = document.getElementById('slide-' + position).querySelectorAll('a');
+  var i;
+
+  for (i = 0; i < allLinks.length; i++) {
+    allLinks[i].setAttribute('tabindex', -1);
+  }
+
+  for (i = 0; i < currentPageLinks.length; i++) {
+    currentPageLinks[i].removeAttribute('tabindex');
+  }
+}
+
+/**
+ * Determines whether or not we are currently in full screen mode
+ */
+function isFullScreen() {
+  return document.fullscreenElement ||
+    document.mozFullScreenElement ||
+    document.webkitFullscreenElement ||
+    document.msFullscreenElement;
+}
+
+/**
+ * Toggle fullScreen mode on document element.
+ * Works on chrome (>= 15), firefox (>= 9), ie (>= 11), opera(>= 12.1), safari (>= 5).
+ */
+function toggleFullScreen() {
+  /* Convenient renames */
+  var docElem = document.documentElement;
+  var doc = document;
+
+  docElem.requestFullscreen =
+    docElem.requestFullscreen ||
+    docElem.msRequestFullscreen ||
+    docElem.mozRequestFullScreen ||
+    docElem.webkitRequestFullscreen.bind(docElem, Element.ALLOW_KEYBOARD_INPUT);
+
+  doc.exitFullscreen =
+    doc.exitFullscreen ||
+    doc.msExitFullscreen ||
+    doc.mozCancelFullScreen ||
+    doc.webkitExitFullscreen;
+
+  isFullScreen() ? doc.exitFullscreen() : docElem.requestFullscreen();
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Update the tabindex to prevent weird slide transitioning
+  updateTabIndex();
+
+  // If the location hash specifies a page number, go to it.
+  var page = window.location.hash.slice(1);
+  if (page) {
+    navigate(parseInt(page) - 1);
+  }
+
+  document.onkeydown = function (e) {
+    var kc = e.keyCode;
+
+    // left, down, H, J, backspace, PgUp - BACK
+    // up, right, K, L, space, PgDn - FORWARD
+    // enter - FULLSCREEN
+    if (kc === 37 || kc === 40 || kc === 8 || kc === 72 || kc === 74 || kc === 33) {
+      navigate(-1);
+    } else if (kc === 38 || kc === 39 || kc === 32 || kc === 75 || kc === 76 || kc === 34) {
+      navigate(1);
+    } else if (kc === 13) {
+      toggleFullScreen();
+    }
+  };
+
+  if (document.querySelector('.next') && document.querySelector('.prev')) {
+    document.querySelector('.next').onclick = function (e) {
+      e.preventDefault();
+      navigate(1);
+    };
+
+    document.querySelector('.prev').onclick = function (e) {
+      e.preventDefault();
+      navigate(-1);
+    };
+  }
+});
+
+/**
+ * Swipe handling added by Peter
+ */
+
+var SWIPE_X_MIN = 50,
+    startX;
+
+document.body.addEventListener('touchstart', function(e) {
+  if (!e.touches || e.touches.length !== 1) {
+    return;
+  }
+  var touch = e.touches[0];
+  startX = touch.screenX;
+}, false);
+
+document.body.addEventListener('touchend', function(e) {
+  if (!e.changedTouches || e.changedTouches.length !== 1) {
+    return;
+  }
+  var touch = e.changedTouches[0];
+  var swipeXDist = touch.screenX - startX;
+  if (swipeXDist < -SWIPE_X_MIN) {
+    // Swipe to left = move right
+    navigate(1);
+  } else if (swipeXDist > SWIPE_X_MIN) {
+    // Swipe to right = move left
+    navigate(-1);
+  }
+}, false);
+
+
+/**
+ * Web Sockets (Faye) added by Peter - for remote control
+ * For running locally only
+ */
+if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') {
+  var wsClient = new Faye.Client('http://localhost:9000/ws');
+
+  console.log('wsClient', wsClient);
+
+  wsClient.subscribe('/remote', function(message) {
+    console.log('Remote control command: ' + message);
+    switch (message) {
+      case 1: {
+        // Left
+        navigate(-1);
+        break;
+      }
+      case 2: {
+        // Right
+        navigate(1);
+        break;
+      }
+    }
+  });
+}
+
+
+/* Service worker registration - added by Peter, removed for now */
+/*
+if (navigator.serviceWorker) {
+
+  navigator.serviceWorker.register('sw.js')
+    .then(function(registration) {
+      console.log('Registration successful', registration.scope);
+    })
+    .catch(function(error) {
+      console.log('Failed - service worker not installed', error);
+    });
+
+}
+*/
+  </script>
+</body>
+</html>
