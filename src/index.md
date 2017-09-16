@@ -374,6 +374,14 @@ controls: false
 
 #### [bit.ly/think-you-know-the-top-browsers](https://bit.ly/think-you-know-the-top-browsers)
 
+-- img-with-header-and-caption
+
+#### &ldquo;Where will your next customers come from? You don’t know. In our truly worldwide web, you *can’t* know.&rdquo;
+
+![World Wide Web not Wealthy Western Web](images/world-wide-web-bruce-lawson.jpg)
+
+<div class="caption">[bit.ly/not-wealthy-western-web](http://bit.ly/not-wealthy-western-web) by Bruce Lawson</div>
+
 -- browser-diversity
 
 ## &ldquo;Because browser diversity is good for the Web&rdquo;
