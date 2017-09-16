@@ -40,8 +40,8 @@
 
 /* Theme Styles */
 body {
-  font-family: 'ComicBook', sans-serif;
-  font-size: 80%;
+  font-family: 'Signika', sans-serif;
+  font-size: 85%;
   text-align: center;
   overflow: hidden;
   color: #9390f5;
@@ -211,7 +211,6 @@ h3 {
   line-height: 1.4;
   border-bottom: none;
   font-weight: bold;
-  -webkit-text-stroke: 1px #000;
 }
 
 h4 {
@@ -729,11 +728,6 @@ h2 + .quote {
 }
 
 /* Slide specific styles here */
-
-sub {
-  position: relative;
-  top: 0.25em;
-}
 
 #slide-1:before {
   background-image: url(images/terminator.jpg);

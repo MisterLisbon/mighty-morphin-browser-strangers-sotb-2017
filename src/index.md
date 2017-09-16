@@ -82,7 +82,7 @@ controls: false
 
 --
 
-## [<sub>~</sub>400 million active users](https://www.smashingmagazine.com/2016/10/whats-the-deal-with-the-samsung-internet-browser/)
+## [~400 million active users](https://www.smashingmagazine.com/2016/10/whats-the-deal-with-the-samsung-internet-browser/)
 
 ### &ldquo;The biggest browser you've probably never heard of&rdquo;
 
