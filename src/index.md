@@ -1,6 +1,10 @@
 title: Mighty Morphin' Browser Strangers
+description: 
 output: public/index.html
 theme: peter-theme
+themecolour: 111111
+url: https://poshaughnessy.github.io/mighty-morphin-browser-strangers-sotb-2017/
+image: https://poshaughnessy.github.io/web-payments-londonjs-2017/images/preview.jpg
 controls: false
 
 --
@@ -569,18 +573,20 @@ Generally:
 
 ### We'll keep going!
 
--- make-the-web-better
+-- call-on-us img-with-header stretch-img
 
-&ldquo;Make the Web Better&rdquo;
+![Moprhin Time](images/morphin-time.gif)
+
+### Call on us if you need us! [@samsunginternet](https://twitter.com/samsunginternet)
 
 -- to-be-continued pictureframe
 
-# To Be Continued...
+# Thank you.
 
 ![Power Rangers boom](images/power-rangers-boom.gif)
 
 <div class="contact">
-  <p class="social">[@poshaughnessy](https://twitter.com/poshaughnessy) &middot; [@samsunginternet](https://twitter.com/samsunginternet)</p>
+  <p class="social">[@poshaughnessy](https://twitter.com/poshaughnessy)</p>
 </div>
 
 <div class="credit">[giphy.com](https://giphy.com/gifs/z6xE1olZ5YP4I)</div>
