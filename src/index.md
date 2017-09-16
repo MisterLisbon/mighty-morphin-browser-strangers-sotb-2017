@@ -482,7 +482,7 @@ Generally:
   <div>D</div>
 </div>
 
-<div class="caption">[Support introduced in v6.2 beta](https://medium.com/samsung-internet-dev/big-news-for-our-new-samsung-internet-beta-v6-2-6199b6743cb9) (backported)</div>
+<div class="caption">[Support introduced in v6](https://medium.com/samsung-internet-dev/big-news-for-our-new-samsung-internet-beta-v6-2-6199b6743cb9) (backported from M57)</div>
 
 -- img-with-header pictureframe
 
