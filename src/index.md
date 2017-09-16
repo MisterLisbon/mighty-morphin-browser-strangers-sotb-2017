@@ -356,9 +356,7 @@ controls: false
 
 --
 
-> &ldquo;Both HTC & Huawei have discontinued their own browsers... Possibly LG has too... As far as I know Xiaomi still has its own browser, as does newcomer Oppo... 
-
-> [But] Samsung is the only one to discuss its browser in public.&rdquo;
+> &ldquo;Both HTC & Huawei have discontinued their own browsers... Possibly LG has too... As far as I know Xiaomi still has its own browser, as does newcomer Oppo...&rdquo;
 
 <div class="caption">[Peter Paul-Koch](https://twitter.com/ppk)</div>
 
@@ -443,6 +441,8 @@ controls: false
 -- img-with-caption
 
 ![Mighty Morphin PWA Rangers](images/mmpr.svg)
+
+<div class="caption">Thanks to [@thisisjofrank](https://twitter.com/thisisjofrank) for this idea ;)
 
 -- img-with-header v6_2 pictureframe
 
