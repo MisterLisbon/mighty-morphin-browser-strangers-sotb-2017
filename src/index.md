@@ -42,7 +42,7 @@ controls: false
 
 ![Samsung Internet](images/sbrowser4.png)
 
-## "Samsung Internet"?
+## &ldquo;Internet&rdquo;?
 
 -- history
 
