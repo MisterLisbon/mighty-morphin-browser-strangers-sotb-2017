@@ -1,5 +1,5 @@
-title: Mighty Morphin' Browser Strangers
-description: 
+title: Mighty Morphin Browser Strangers
+description: a.k.a. How some little-known browsers are contributing to the Web
 output: public/index.html
 theme: peter-theme
 themecolour: 111111
