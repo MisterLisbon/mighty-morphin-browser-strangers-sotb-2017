@@ -33,9 +33,3 @@ commands!
 ```
 npm run deploy
 ```
-
-## Credits
-
-* Lightning background by [oompa123](https://commons.wikimedia.org/wiki/File:Pink_Lightning.jpg)
-* Comic Book font by [Pixel Sagas](http://www.dafont.com/comic-book.font)
-* Terminator image by [stephen bowler](https://commons.wikimedia.org/wiki/File:Terminator.JPG)
