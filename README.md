@@ -1,7 +1,7 @@
 # "Mighty Morphin' Browser Strangers"
 ### a.k.a. How Samsung Internet and Other Little-Known Browsers are Contributing to the Web
 
-My slides for [State of the Browser](https://www.stateofthebrowser.com/) 2017. 
+My slides for [State of the Browser 6](https://www.stateofthebrowser.com/). 
 
 ## To view the slides
 
