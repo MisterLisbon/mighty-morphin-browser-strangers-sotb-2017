@@ -159,11 +159,10 @@ video + .caption {
 h1, h2 {
   margin: 0 0 0.25em 0;
   font-weight: bold;
-  transform: scaleX(1.05);
 }
 
 h1 {
-  font-size: 300%;
+  font-size: 250%;
   line-height: 1.5;
 }
 

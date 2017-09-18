@@ -33,3 +33,7 @@ commands!
 ```
 npm run deploy
 ```
+
+## Additional credits
+
+* Lightning background by [oompa123](https://commons.wikimedia.org/wiki/File:Pink_Lightning.jpg)

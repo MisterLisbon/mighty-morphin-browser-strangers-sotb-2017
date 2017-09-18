@@ -16,6 +16,8 @@ controls: true
   <p class="social">by [@poshaughnessy](https://twitter.com/poshaughnessy)</p>
 </div>
 
+<div class="credit">[stephen bowler](https://commons.wikimedia.org/wiki/File:Terminator.JPG)</div>
+
 --
 
 ![Mighty Morphin Browser Strangers](images/mmbs.svg)
